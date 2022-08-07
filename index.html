@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Luc Wendjaneh </title>
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/medium.css">
+    <link rel="stylesheet" href="./public/css/mobile.css">
+    <link rel="icon" href="./public/images/logo lw.png">
+    <script type="text/javascript" src="./public/script/scroll.js"></script>
+    <script type="text/javascript" src="./public/script/frise.js"></script>
+    <script type="text/javascript" src="./public/script/navbar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="showLetters()">
+
+    <div id="ancreAccueil"></div>
+
+    <header class="mainNavBar">
+        <nav>
+
+
+            <img src="./public/images/logo lw.png" class="logo">
+            <p> <a style="text-decoration: none; color: black;" href="#ancreAccueil"> Luc Wendjaneh </a></p>
+
+            <ol>
+
+                <center class="mobileCenterObject">
+
+                <li class="li-sub-menu">
+                    <div>
+                        <center>
+                            <img src="public/images/multilang-ico.png" class="multilang">
+                        </center>
+                    </div>
+
+                    <ol class="sub-menu">
+                        <li> <a href="./index.html" style="text-decoration: none;" class="link-sub-menu"> <img
+                                    src="./public/images/drapeau france.png"> Français </a> </li>
+                        <li> <a href="./en.html" style="text-decoration: none;" class="link-sub-menu"> <img
+                                    src="./public/images/drapeau anglais.jpg"> English </a> </li>
+                    </ol>
+
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreContact"> Contact </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreCompetence"> Compétences </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreCV"> CV </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreQuiSuije"> Qui suis-je ? </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreAccueil"> Accueil </a>
+                </li>
+
+                </center>
+
+            </ol>
+
+            <hr class="barNavbar">
+
+        </nav>
+    </header>
+
+    <header class="mobileNavBar">
+        <nav id="WhiteNavBar">
+
+
+            <img src="./public/images/logo lw.png" class="logo">
+            <p> <a style="text-decoration: none; color: black;" href="#ancreAccueil"> Luc Wendjaneh </a></p>
+
+            <img class="mobileNavBarImage" onclick="responsiveNav();" id="mobileNavBarImage" src="./public/images/mobilenav.png">
+
+            <ol id="apearResponsiveNavBar">
+
+                <center class="mobileCenterObject">
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreAccueil" onclick="NavLinkPress();"> Accueil </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreQuiSuije" onclick="NavLinkPress();"> Qui suis-je ? </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreCV" onclick="NavLinkPress();"> CV </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreCompetence" onclick="NavLinkPress();"> Compétences </a>
+                </li>
+
+                <li>
+                    <a style="text-decoration: none;" href="#ancreContact" onclick="NavLinkPress();"> Contact </a>
+                </li>
+
+                <li class="li-sub-menu">
+                    <div>
+                        <center>
+                            <img src="public/images/multilang-ico.png" class="multilang">
+                        </center>
+                    </div>
+
+                    <ol class="sub-menu">
+                        <li> <a href="./index.html" style="text-decoration: none;" class="link-sub-menu"> <img
+                                    src="./public/images/drapeau france.png"> Français </a> </li>
+                        <li> <a href="./en.html" style="text-decoration: none;" class="link-sub-menu"> <img
+                                    src="./public/images/drapeau anglais.jpg"> English </a> </li>
+                    </ol>
+
+                </li>
+
+                </center>
+
+            </ol>
+
+            <hr class="barNavbar">
+
+        </nav>
+    </header>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <section>
+        <center class="mobileCenterObject">
+            <div class="Accueil">
+                <center>
+                    <h1> Luc Wendjaneh </h1>
+                    <hr class="barAcceuil">
+                    <p><strong id="hello">  </strong></p>
+                </center>
+            </center>
+        </div>
+
+
+        <!--------------------------------------------------------------------------------------------------------------------->
+
+
+        <div class="content" id="content">
+            <div id="ancreQuiSuije" class="ancreQuiSuije"></div>
+            <div class="QuiSuisje">
+
+                <video src="./public/video/presentation.mp4" controls class="QuiSuisJeVideo" poster type="video/mp4">
+                    This video cannot be played in your current browser.<br>
+                    View the download version at <a href="./public/images/firse/bureauLondre.mp4">Link address</a>.
+                </video>
+
+
+                <div class="QuiSuisJeText">
+
+                    <h2> Qui suis-je ? </h2>
+                    <p>
+                        Dès mon plus jeune âge, j’ai su être quelqu’un de profondément curieux et créatif.
+                        C’est sûrement ce qui m’a amené dans le secteur du digital. Sans cesse en évolution,
+                        en symbiose avec les nouvelles technologies et rempli d’opportunités,
+                        il m’a immédiatement séduit et il occupe dorénavant une place à part entière dans ma vie.
+                        Dans la sphère privée et professionnelle,
+                        on me qualifie souvent comme quelqu’un d’extrêmement sociable et jovial avec une envie d’en apprendre toujours plus sur les autres mais aussi, des autres.
+                        Mais l’objectif de ce site est de me découvrir !
+                        Je vous laisse donc le parcourir,
+                        ou devrais-je dire me parcourir pour en découvrir un peu plus sur mon parcours et ma personnalité.
+                        N’hésitez pas à prendre contact avec moi par la suite. 🙂
+                    </p>
+                    <br>
+                    <br>
+                    <p> <a href="#ancreFrise">En savoir plus </a></p>
+
+                </div>
+                <br>
+            </div>
+
+            <!--------------------------------------------------------------------------------------------------------------------->
+
+
+            <div id="ancreFrise" class="ancreFrise"></div>
+                <div class="frise">
+                    <center>
+
+                        <div class="frisePart">
+                            <a onclick="textFrise(2)">
+                                2016
+                            </a>
+
+                            <div class="frisePoint" id="2" onclick="textFrise(2)" style="background-color: #2C63CB;"></div>
+
+                        </div>
+
+                        <div class="frisePart">
+                            <a onclick="textFrise(3)">
+                                2017
+                            </a>
+
+                            <div class="frisePoint" id="3" onclick="textFrise(3)"></div>
+
+                        </div>
+
+                        <div class="frisePart">
+                            <a onclick="textFrise(4)">
+                                2018
+                            </a>
+
+                            <div class="frisePoint" id="4" onclick="textFrise(4)"></div>
+
+                        </div>
+
+                        <div class="frisePart">
+                            <a onclick="textFrise(5)">
+                                2020
+                            </a>
+
+                            <div class="frisePoint" id="5" onclick="textFrise(5)"></div>
+
+                        </div>
+
+                        <hr class="friseBar">
+
+                        <div class="londre" id="londre">
+                            <p> 2016 - 4 mois à Londres </p>
+                            <video src="./public/images/firse/bureauLondre.mp4" controls>
+                                This video cannot be played in your current browser.<br>
+                                View the download version at <a href="./public/images/firse/bureauLondre.mp4">Link address</a>.
+                            </video>
+                            <img src="./public/images/firse/londre2.jpg">
+                            <img src="./public/images/firse/londre3.jpg">
+                        </div>
+
+                        <div class="thailande-Vietnam" id="thailande-Vietnam">
+                            <p> 2017 - Humanitaire en Thaïlande et Road Trip au Vietnam </p>
+                            <img class="humanitaire" src="./public/images/firse/humanitaire.jpg">
+                            <img class="humanitaire" src="./public/images/firse/humanitaire2.jpg">
+                            <br clear="all">
+                            <img class="vietnam" src="./public/images/firse/roadtrip.jpg">
+                            <img class="vietnam" src="./public/images/firse/roadtrip2.jpg">
+                            <img class="vietnam" src="./public/images/firse/roadtrip3.jpg">
+                        </div>
+
+                        <div class="President" id="President">
+                            <p style="margin-bottom: 40px;" > 2018 - Président d’association </p>
+                            <img src="./public/images/firse/president.jpg">
+                            <img class="associationImage" src="./public/images/firse/association.jpg">
+                            <img src="./public/images/firse/lrboutique.png" class="lrboutique">
+                            <br clear="all">
+                            <img style="height: 550px;" src="./public/images/firse/boutiqueJournal.JPG">
+                        </div>
+
+                        <div class="radio" id="radio">
+                            <p style="margin-bottom: 20px;"> 2020 - Passage à la radio </p>
+                            <img src="./public/images/firse/casque.png">
+                            <audio controls style="outline: none;">
+                                <source src="./public/images/firse/radio.mp3" type="audio/mp3">
+                                <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                                   un <a href="./public/images/firse/radio.mp3"> lien vers le fichier audio </a> pour le
+                                   télécharger.</p>
+                              </audio>
+                        </div>
+
+                    </center>
+
+                </div>
+
+
+
+            <!--------------------------------------------------------------------------------------------------------------------->
+
+            <div id="ancreCV" class="ancreCV"></div>
+            <div class="CV">
+                <center>
+                    <img src="./public/images/photo-sourire (2).png" class="photoAvantCV">
+                </center>
+
+                <h2 class="expPro"> Expérience Professionnelle </h2>
+                <p class="parcourEtSpe"> Parcours et spécialisation </p>
+
+                <div class="expProBlock">
+
+                  <div class="imageCV">
+                      <center class="mobileCenterObject">
+                          <img class="sub-ImageCV" src="./public/images/Les logos des entreprises/air-liquide.png" style="height: 70px; width: 70px;">
+                          <img class="sub-secondImageCV" src="./public/images/Les logos des entreprises/Logo_LVL_Médical.png" style="height: 65px; width: 65px;">
+                      </center>
+                  </div>
+
+                    <div class="title">
+                        <h2> Chef de projet communication digitale </h2>
+                    </div>
+
+                    <div class="date">
+                        Févr. 2021 - Aujourd’hui
+                    </div>
+
+                    <div class="text">
+                      Élaboration et animation de la stratégie de communication digitale de la filiale LVL Médical.
+                      Mise en œuvre des projets digitaux du Groupe Air Liquide et accompagnement des parties prenantes en tant que référent technique.
+                    </div>
+
+                </div>
+
+                <div class="expProBlock">
+
+                    <div class="imageCV">
+                        <center class="mobileCenterObject">
+                            <img class="sub-ImageCV" src="./public/images/Les logos des entreprises/Burger_King_logo.png">
+                            <img class="sub-secondImageCV" src="./public/images/Les logos des entreprises/Logo_Quick.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h2> Chef de projet digital et Marketing </h2>
+                    </div>
+
+                    <div class="date">
+                        Sept. 2019 - Sept. 2020
+                    </div>
+
+                    <div class="text">
+                        Mise à jour et renouvellement des plateformes digitales de la marque Quick.
+                        Élaboration et suivi des campagnes marketing et communication nationales et régionales.
+                    </div>
+
+                </div>
+
+                <div class="expProBlock">
+
+                    <div class="imageCV">
+                        <center class="mobileCenterObject">
+                            <img class="sub-ImageCV imgCVCenterSeul" src="./public/images/Les logos des entreprises/logo_20min.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h2> Assistant chef de produit digital </h2>
+                    </div>
+
+                    <div class="date">
+                        Oct. 2018 - Avr. 2019
+                    </div>
+
+                    <div class="text">
+                        Coordination et pilotage des évolutions des applications mobiles de la marque 20 Minutes.
+                        Création de l’application 20 Minutes Lite. Gestion des campagnes d’acquisitions.
+                    </div>
+
+                </div>
+
+                <div class="expProBlock">
+
+                    <div class="imageCV">
+                        <center class="mobileCenterObject">
+                            <img class="sub-ImageCV imgCVCenterSeul" src="./public/images/Les logos des entreprises/trentotto.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h2> Assistant responsable <br> e-commerce </h2>
+                    </div>
+
+                    <div class="date">
+                        Mai 2018 - Sept. 2018
+                    </div>
+
+                    <div class="text">
+                        Construction du site e-commerce Trentotto. Conception du CRM et de nombreux supports graphiques.
+                    </div>
+
+                </div>
+
+                <div class="expProBlock">
+
+                    <div class="imageCV">
+                        <center class="mobileCenterObject">
+                            <img class="sub-ImageCVlogoEvvnt" src="./public/images/Les logos des entreprises/evvntlogo.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h2> Assistant développement international </h2>
+                    </div>
+
+                    <div class="date">
+                        Déc. 2016 - Févr. 2017
+                    </div>
+
+                    <div class="textEvvnt">
+                        Études d’implantation aux USA, suivi et développement des ventes à evvnt.
+                    </div>
+
+                </div>
+
+                <center>
+                    <a href="./public/fichier/Luc CV.pdf" target="_blank" download="Luc CV T.pdf" class="downloadCV">
+                        Télécharger le CV complet PDF </a>
+                </center>
+
+
+
+                <center>
+                    <hr class="CVseparation">
+
+                    <img src="./public/images/graduation.png" class="diplomeImage">
+                </center>
+
+
+                <h2 class="Diplomes"> Diplômes </h2>
+                <p class="appris"> Ce que j'ai appris </p>
+
+                <div class="diplomeText">
+
+                    <div class="imageDiplome">
+                        <center class="mobileCenterObject">
+                            <img class="sub-imageDiplomeGoogle" src="./public/images/Logos diplomes/Google.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h1> Google </h1>
+                    </div>
+                    <div class="text">
+                        <p> Certification fondamentaux du Marketing Numérique </p>
+                    </div>
+                    <div class="date">
+                        <p> 2020 </p>
+                    </div>
+
+                </div>
+
+                <div class="diplomeText">
+
+                    <div class="imageDiplome">
+                        <center class="mobileCenterObject">
+                            <img class="sub-imageDiplomeLaRochelle" src="./public/images/Logos diplomes/La Rochelle Business School.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h1> La Rochelle Business School </h1>
+                    </div>
+                    <div class="text">
+                        <p> Master 2 Management & Marketing - Programme grande école </p>
+                    </div>
+                    <div class="date">
+                        <p> 2016 - 2020 </p>
+                    </div>
+
+                </div>
+
+                <div class="diplomeText">
+
+                    <div class="imageDiplome">
+                        <center class="mobileCenterObject">
+                            <img class="sub-imageDiplomePigier" src="./public/images/Logos diplomes/Pigier.jpg">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h1> Ecole Pigier </h1>
+                    </div>
+                    <div class="text">
+                        <p> BTS Management des unités commerciales </p>
+                    </div>
+                    <div class="date">
+                        <p> 2014 - 2016 </p>
+                    </div>
+
+                </div>
+
+                <div class="diplomeText">
+
+                    <div class="imageDiplome">
+                        <center class="mobileCenterObject">
+                            <img class="sub-imageDiplomeEDR" src="./public/images/Logos diplomes/Emilie de Rodat.png">
+                        </center>
+                    </div>
+
+                    <div class="title">
+                        <h1> Lycée Emilie de Rodat </h1>
+                    </div>
+                    <div class="text">
+                        <p> BAC Sciences technologiques du Management et de la gestion </p>
+                    </div>
+                    <div class="date">
+                        <p> 2012-2014 </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------------------------------------------------------------------------------------------------------->
+
+
+            <div id="ancreCompetence" class="ancreCompetence"></div>
+            <center>
+                <hr class="competencesSeparation">
+            </center>
+
+
+            <div class="competences">
+
+                <h2 class="mesCompetances"> Mes Compétences </h2>
+                <p class="fais"> Ce que j'ai fait </p>
+
+
+                <div class="competencesBlock">
+
+                    <div class="sub-competencesBlock">
+
+                        <center>
+                            <img src="./public/images/gestion de projet.jpg">
+                        </center>
+
+                        <div class="competencesText">
+                            <p> ... </p>
+                            <h3> Management de projet </h3>
+
+                            <div class="sub-competencesText">
+
+                                <ul>
+                                    <li>
+                                        Suivi de production
+                                    </li>
+                                    <li>
+                                        Budgétisation
+                                    </li>
+                                    <li>
+                                        Planification
+                                    </li>
+                                    <li>
+                                        Présentation pro.
+                                    </li>
+                                    <li>
+                                        Gantt project
+                                    </li>
+                                    <li>
+                                        Trello
+                                    </li>
+                                    <li>
+                                        Méthode agile scrum
+                                    </li>
+                                    <li>
+                                        Suite office
+                                    </li>
+                                    <li>
+                                        Management de prestataires
+                                    </li>
+                                    <li>
+                                        Management d’équipe
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sub-competencesBlock">
+
+                        <center>
+                            <img src="./public/images/Marketing_Communication.jpg">
+                        </center>
+
+                        <div class="competencesText">
+
+                            <p> ... </p>
+                            <h3 class="marketingEtCom"> Marketing et communication </h3>
+
+                            <div class="sub-competencesText">
+
+                                <ul>
+                                    <li>
+                                        Reporting
+                                    </li>
+                                    <li>
+                                        Définition et analyses des KPI’s
+                                    </li>
+                                    <li>
+                                        Veille concurrentielle
+                                    </li>
+                                    <li>
+                                        Création graphique
+                                    </li>
+                                    <li>
+                                        Création vidéo
+                                    </li>
+                                    <li>
+                                        CRM
+                                    </li>
+                                    <li>
+                                        Réseaux sociaux
+                                    </li>
+                                    <li>
+                                        Google analytics
+                                    </li>
+                                    <li>
+                                        AT internet
+                                    </li>
+                                    <li>
+                                        Facebook ads
+                                    </li>
+                                    <li>
+                                        Google My Business
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sub-competencesBlock">
+
+                        <center>
+                            <img src="./public/images/UX Design.jpg">
+                        </center>
+
+                        <div class="competencesText">
+
+                            <p> ... </p>
+                            <h3> Digital </h3>
+
+                            <div class="sub-competencesText">
+
+                                <ul>
+                                    <li>
+                                        Recette fonctionnelle
+                                    </li>
+                                    <li>
+                                        Test A/B
+                                    </li>
+                                    <li>
+                                        Story board
+                                    </li>
+                                    <li>
+                                        Wireframe
+                                    </li>
+                                    <li>
+                                        Référencement mobile (ASO)
+                                    </li>
+                                    <li>
+                                        Référencement web (SEO)
+                                    </li>
+                                    <li>
+                                        E-mailing
+                                    </li>
+                                    <li>
+                                        Rédaction de processus
+                                    </li>
+                                    <li>
+                                        Google play / Apple store
+                                    </li>
+                                    <li>
+                                        UX Design
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <center>
+                <hr class="separationContact">
+            </center>
+
+            <div id="ancreContact" class="ancreContact"></div>
+
+
+            <div class="contact">
+
+                <h1 class="titleContact"> Contactez Moi </h1>
+
+
+
+                <div class="contactMe">
+                        <img src="./public/images/linkedin-logo.png">
+                        <a href="https://fr.linkedin.com/in/luc-wendjaneh"> Linkedin </a>
+
+                </div>
+
+                <div class="contactMe">
+                            <img src="./public/images/email.png">
+                            <a class="linkemail" href="mailto: lm.wendjaneh@gmail.com">
+                                <p> Email </p>
+                                <p>  lm.wendjaneh@gmail.com </p>
+                            </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <br>
+    <div class="end"></div>
+
+
+</body>
+
+</html>
+
+
+<script type="text/javascript" src="./public/script/scrollreveal-master/dist/scrollreveal.min.js"></script>
+<script type="text/javascript" src="./public/script/textApear.js"></script>
